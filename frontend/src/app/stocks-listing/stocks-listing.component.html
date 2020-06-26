@@ -1,6 +1,6 @@
 <h4>STOCKS!</h4>
 
-<p-button label="GET COMPANIES" (click)="list()"></p-button>
+<p-button id="getbtn" label="GET COMPANIES" (click)="list()"></p-button>
 
 <!-- 
 <hr  />
@@ -10,7 +10,8 @@
     </li>
 </ul> -->
 <hr />
-<p-table [value]="stocks">
+<p-table [value]="stocks" [paginator]="true" [rows]="100" [rowsPerPageOptions]="[5,10,15,20]"
+totalRecords="totalRecords" pageLinks="3">
     <ng-template pTemplate="header">
         <tr>
             <th>ID</th>
@@ -22,7 +23,7 @@
     <ng-template pTemplate="body" let-dados>
         <tr>
             <td>{{dados.id}}</td>
-            <td>{{dados.priceDate}}</td>
+            <td>{{dados.priceDate | date:'short' }}</td>
             <td>{{dados.price}}</td>
             <td>{{dados.company.name}}</td>
         </tr>

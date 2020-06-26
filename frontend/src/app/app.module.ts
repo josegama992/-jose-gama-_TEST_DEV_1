@@ -8,6 +8,7 @@ import { StocksListingComponent } from './stocks-listing/stocks-listing.componen
 import {StocksService} from "./stocks.service"
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
+import {PaginatorModule} from 'primeng/paginator';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {TableModule} from 'primeng/table';
     AppRoutingModule,
     HttpClientModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    PaginatorModule
     
   ],
   providers: [StocksService],

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StocksService } from '../stocks.service';
 
 import {ButtonModule} from 'primeng/button';
+import {PaginatorModule} from 'primeng/paginator';
 
 @Component({
   selector: 'app-stocks-listing',
