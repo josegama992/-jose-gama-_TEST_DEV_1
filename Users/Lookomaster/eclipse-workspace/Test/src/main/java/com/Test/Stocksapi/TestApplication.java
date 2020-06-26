@@ -36,7 +36,7 @@ public class TestApplication {
 			while (dStart.get(Calendar.DAY_OF_YEAR)<= cEnd.get(Calendar.DAY_OF_YEAR)) {
 				if(Calendar.getInstance().get(Calendar.DAY_OF_YEAR) == dStart.get(Calendar.DAY_OF_YEAR) 
 						& Calendar.getInstance().get(Calendar.HOUR_OF_DAY)<= dStart.get(Calendar.HOUR_OF_DAY) 
-						& dStart.get(Calendar.HOUR_OF_DAY) <= 18) {
+						& dStart.get(Calendar.HOUR_OF_DAY) <= 18 && dStart.get(Calendar.HOUR_OF_DAY)>=10) {
 
 					Stock currentstock = new Stock();
 					currentstock.setPriceDate(dStart);
