@@ -5,8 +5,8 @@ Angular dependencies:
 Java Dependencies:
 Springboot - 2.3.1
 SpringDataJpa
+Lombok
 
-
-The Database is mysql 8.0
+The Database is mysql 8.0.
 
 
