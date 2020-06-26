@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StocksListingComponent } from './stocks-listing/stocks-listing.component';
 import {StocksService} from "./stocks.service"
+import {ButtonModule} from 'primeng/button';
+import {TableModule} from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,10 @@ import {StocksService} from "./stocks.service"
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ButtonModule,
+    TableModule
+    
   ],
   providers: [StocksService],
   bootstrap: [AppComponent]

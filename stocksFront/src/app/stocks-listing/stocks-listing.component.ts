@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { StocksService } from '../stocks.service';
 
+import {ButtonModule} from 'primeng/button';
+
 @Component({
   selector: 'app-stocks-listing',
   templateUrl: './stocks-listing.component.html',
