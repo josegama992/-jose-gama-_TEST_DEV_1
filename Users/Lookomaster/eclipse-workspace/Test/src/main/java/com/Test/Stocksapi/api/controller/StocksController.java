@@ -18,10 +18,10 @@ public class StocksController {
 	@Autowired
 	private StocksService stockService; 
 	
-/*	@GetMapping("test")
+	@GetMapping("test")
 	public List<Stock> gettudo(@RequestParam int hours, @RequestParam(name = "company_name") String companyName){
 		return stockService.getStocks(companyName, hours);
-	}*/
+	}
 	@GetMapping("getAll")
 	public List<Stock> getAll(){
 		return stockService.listAll();
